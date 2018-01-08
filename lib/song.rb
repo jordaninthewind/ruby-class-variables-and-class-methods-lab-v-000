@@ -27,14 +27,11 @@ attr_reader :name, :artist, :genre
   end
 
   def self.genre_count
-    # hash = {}
-    # @@genres.uniq.collect {| el | hash[el] = @@genres.count(el) }
-    # hash
     @@genres.uniq.collect {| el | [el, @@genres.count(el)] }.to_h
   end
 
   def self.artist_count
-    @@artists.uniq.collect {}
+    @@artists.uniq.collect {| el | [el, @@artists.count(el)] }.to_h
   end
 
 end
