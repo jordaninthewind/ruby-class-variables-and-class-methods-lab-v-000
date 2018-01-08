@@ -22,8 +22,13 @@ attr_reader :name, :artist, :genre
     @@artists.uniq
   end
 
-  def self.genres_count
+  def self.genres
     @@genres.uniq
+  end
+  
+
+  def self.genres_count
+    @@genres.uniq.length
   end
 
   def artist_count
