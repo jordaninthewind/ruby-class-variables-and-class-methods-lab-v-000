@@ -24,5 +24,10 @@ attr_reader :name, :artist, :genre
 
   def genres_count
     @@genres.length
+  end
+
+  def artist_count
+    @@artists.length
+  end
 
 end
