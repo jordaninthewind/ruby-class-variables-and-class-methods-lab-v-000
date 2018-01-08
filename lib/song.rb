@@ -30,7 +30,7 @@ attr_reader :name, :artist, :genre
     @@genres.uniq.collect {| el | [el, @@genres.count(el)] }.to_h
   end
 
-  def artist_count
+  def self.artist_count
     @@artists.uniq
   end
 
