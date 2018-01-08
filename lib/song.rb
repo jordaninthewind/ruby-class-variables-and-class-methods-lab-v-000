@@ -15,7 +15,7 @@ attr_reader :name, :artist, :genre
   end
 
   def count
-    @@count
+    puts @@count
   end
 
   def artists
