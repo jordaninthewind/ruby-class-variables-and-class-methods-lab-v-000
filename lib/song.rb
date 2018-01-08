@@ -26,7 +26,7 @@ attr_reader :name, :artist, :genre
     @@genres.uniq
   end
 
-  def self.genres_count
+  def self.genre_count
     hash = {}
     @@genres.uniq.collect {| el | hash[el] = @@genres.count(el) }
     hash
