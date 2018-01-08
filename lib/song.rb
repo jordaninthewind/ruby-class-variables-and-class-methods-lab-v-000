@@ -18,4 +18,7 @@ attr_reader :name, :artist, :genre
     @@count
   end
 
+  def artists
+    @@artists
+
 end
