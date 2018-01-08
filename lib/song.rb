@@ -19,7 +19,7 @@ attr_reader :name, :artist, :genre
   end
 
   def artists
-    @@artists
+    @@artists.uniq
   end
 
   def genres_count
