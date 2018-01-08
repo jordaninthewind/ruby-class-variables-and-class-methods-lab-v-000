@@ -14,8 +14,7 @@ attr_reader :name, :artist, :genre
     @@genres << genre
   end
 
-  def cou
-    nt
+  def self.count
     puts @@count
   end
 
