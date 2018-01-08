@@ -27,7 +27,7 @@ attr_reader :name, :artist, :genre
   end
 
   def self.genres_count
-    @@genres.uniq.collect {| el | [el, @@genres.count(el)] }.to_h
+    @@genres.uniq.collect {| el | el: @@genres.count(el) }.to_h
   end
 
   def self.artist_count
